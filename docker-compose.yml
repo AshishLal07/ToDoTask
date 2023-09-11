@@ -1,0 +1,35 @@
+services:
+  react-app:
+    image: react-app
+    stdin_open: true
+    ports:
+      - 5173:5173
+    networks:
+      - mern-app
+  api-server:
+    image: api-server
+    ports:
+      - 8005:8005
+    networks:
+      - mern-app
+      - express-mongo
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    restart: always
+    networks:
+      - express-mongo
+    volumes:
+      - mongo_db:/data/db
+    ports:
+      - 27017:27017
+
+networks:
+  mern-app:
+  express-mongo:
+
+volumes:
+  mongo_db:
+    driver: local

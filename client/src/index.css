@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    min-height: 300px;
+    max-width: 500px;
+    margin: 30px auto !important;
+    border: 1px solid steelblue;
+    padding: 30px !important;
+    border-radius: 5px;
+    overflow: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px ;
+}
+.btn {
+    display: inline-block;
+    background: black;
+    color: #fff;
+    border: none;
+    width: 60px;
+    padding: 10px 2px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+}
+.btn:focus {
+    outline: none;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.add-form{
+    margin-bottom: 50px ;
+}
+
+.form-controll {
+    margin: 20px 0;
+}
+.form-controll label {
+    display: block;
+}
+.form-controll input {
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+}
+.form-controll-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-controll-check label {
+    flex: 1;
+}
+.form-controll-check input {
+    flex: 2;
+    height: 20px;
+}
+.task{
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+
+  
+}
+.task.reminder{
+    border-left:5px solid green ;
+}
+.task h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: azure;
+}
+
+.main-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  height: 30px;
+  width: 160px;
+  background-color: white;
+  border: 1px solid #cccc;
+  margin: 40px 10px ;
+  padding-left: 10px ;
+  outline: none;
+}
+
+li{
+  margin-top: 10px;
+}
+
+button{
+  height: 30px;
+  width: 80px;
+  background-color: greenyellow;
+  border: 1px solid #cccc;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px 1px gray;
+  cursor: pointer;
+} */
